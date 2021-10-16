@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',#added so that django can find my templates
+    'users.apps.UsersConfig',#added so django can find the user app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

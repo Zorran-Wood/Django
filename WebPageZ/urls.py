@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from users import views as user_views #added users views.py file to access the user creation page file
 
 #add 10/14/2021
 from django.conf import settings
@@ -22,6 +23,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [ #routes for the urls
     path('admin/', admin.site.urls),
+    path('register/', user_views.register, name='register'),#accessing the register page the site
     path('', include('blog.urls')),#accessing the "urls" file in Blog
     
 
