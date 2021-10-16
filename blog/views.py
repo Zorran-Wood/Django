@@ -40,6 +40,8 @@ def cyclura(request):
     return render(request, 'blog/cyclura.html', {'title' : 'cyclura'})
 
 
+def camry(request):
+    return render(request, 'blog/camry.html', {'title' : 'camry'})
 
 
 
