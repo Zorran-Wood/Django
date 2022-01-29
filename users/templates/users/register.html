@@ -4,7 +4,7 @@
         <form method="POST">
             {% csrf_token %}<!--Cross Site Request Forgry Token.  These are used to protect the form from attacks. THIS IS REQUIRED-->
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Join Today!</legend>
+                <legend class="border-bottom mb-4">Join Today!</legend><!-- Part of screen says join today -->
                 {{ form.as_p }}
             </fieldset>
             <div class="form group">

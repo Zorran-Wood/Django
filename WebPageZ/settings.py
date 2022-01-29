@@ -26,7 +26,15 @@ SECRET_KEY = 'django-insecure--86(y#hu(vyi8lllj_04saeigjixa50-_6ax_l$t@0n0ow%@h7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+
+    'localhost',
+    '144.126.139.242',
+    '0.0.0.0',
+    'zorran.dev',
+     'www.zorran.dev',
+
+]
 
 
 # Application definition

@@ -5,6 +5,7 @@ from .models import Post#the . in .models is accessed because its in the same di
 #def is how you declare a method
 
 
+#This is dummy data for the data base, the data base is now able to add user data to it without hard coding it.
 posts = [
 
     {
@@ -16,7 +17,6 @@ posts = [
     }
 
 ]
-
 
 
 
@@ -33,7 +33,7 @@ def home(request):#when this is accessed by blog.urls it sends back this HttpRes
 
 
 def about(request):
-    return render(request, 'blog/about.html', {'title' : 'big boobs'})
+    return render(request, 'blog/about.html', {'title' : 'about'})
 
 
 def cyclura(request):
